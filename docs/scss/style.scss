@@ -1,0 +1,330 @@
+@import '_vars';
+@import '_global';
+@import '_fonts';
+
+
+// start header section 
+.header {
+   position: relative;
+   background-color: $bg-block;
+   padding: 20px; 
+   text-align: end;
+   
+   ul {   
+
+      li{
+         display: inline-block;
+         font-size: 18px;
+         transition: all 0.3s;
+
+         & + li {
+            margin-left: 20px;
+         }
+         &:hover {
+           color: $pink;
+         }
+      }
+   }
+}
+.main {
+      background-repeat: repeat;
+      background-size: contain;
+      background-position:center;
+      padding: 20px;
+      &__inner {
+         display: flex;
+      }
+      &__content {
+         position: relative;
+         text-align: center;
+         width: 100%;
+         color: $font-title;
+         h1 {
+            margin: 0 auto 20px; 
+            text-shadow:  0px 4px 2px  rgba(0, 0, 0, 0.1); 
+            color: $pink; 
+            font-size: 36px;  
+            font-weight: 800; 
+            font-family: 'Dosis';       
+         }
+         h3 {
+            font-size: 18px;
+            font-weight: 500;
+            font-family: 'Dosis';
+            color: #645f61;
+         }
+         .hard-skills {
+            @include skills;            
+            font-size: 18px;
+
+            ul {
+               li {
+                  @include flex;
+                  line-height: 24px;
+                  color: $font;
+                  align-items: center;
+                  margin-bottom: 10px;
+                 
+               };
+            }
+            .line {
+               width: 70%;
+               height: 10px;
+               background-color: $font;
+               border-radius: 5px;
+            }
+            .rate-html {
+               @include rate;
+               width: 95%;
+            }
+            .rate-css {
+               @include rate;
+               width: 70%;
+            }
+            .rate-bem {
+               @include rate;
+               width: 80%;
+            }
+            .rate-scss {
+               @include rate;
+               width: 70%;
+            }
+            .rate-gulp {
+               @include rate;
+               width: 100%;
+            }
+            .rate-js {
+               @include rate;
+               width: 30%;
+            }
+            .rate-jquery {
+               @include rate;
+               width: 70%;
+            }
+            .rate-git {
+               @include rate;
+               width: 50%;
+            }
+            .rate-adobe {
+               @include rate;
+               width: 50%;
+            }
+            .rate-figma {
+               @include rate;
+               width: 90%;
+            }
+            .rate-avo {
+               @include rate;
+               width: 90%;
+            }
+         }
+         .soft-skills {
+            position: relative;
+            background-color: transparent;
+            box-shadow: none;
+            height: 320px;
+            &__wrapper {
+               @include skills;
+               position: absolute;
+               right: 0;
+               top: 0;
+               color: $font;
+               background-color: $bg-block;
+               ul {
+                  display: flex;
+                  justify-content: space-around;
+                  flex-wrap: wrap;
+                  padding: 0 10px;
+                
+                  li {
+                     margin-bottom: 20px;
+                     padding: 5px;
+                     font-size: 16px;
+                     transition: all 0.5s;
+                     
+                     &:nth-child(odd) {
+                        margin-right: 20px;
+                        color: $pink;
+                        font-size: 18px;
+                     }
+                     &:nth-child(even) {
+                        margin-right: 50px;
+                     }
+                     &:nth-child(7) {
+                        margin-left: 70px;
+                     }
+                     &:nth-child(9) {
+                        margin-left: -20px;
+                     }
+                     &:hover {
+                        transform: scale(1.5);
+                        background-color: $bg-block;
+                        border-radius: 10px;
+                        // border: 1px solid  $font;
+                     }
+                   
+                  }
+                  
+               }
+            }
+           
+         }
+         .projects {
+            position: relative;                 
+            padding: 20px;           
+            color: #645f61;
+            
+            .mastia {
+               margin-left: 100px;
+            }
+            
+            h1 {
+               // margin-top: 200px;
+               width: 200px;
+            }
+            .link {               
+               color: $pink;
+               font-weight: 800;
+               font-family: 'Dosis';
+               text-transform: uppercase;
+               font-style: normal;
+               text-align: center;
+            }
+            ul {
+            
+               // @include flex;
+               // flex-wrap: wrap;
+               li {
+                  max-width: 400px;                 
+                  margin-bottom: 20px;
+                  padding: 10px 0;
+                  font-size: 16px;
+                  background-color: $bg-block;
+                  border-radius: 10px; 
+                  box-shadow: 2px 2px 2px 2px rgba(71, 52, 52, 0.3); 
+                  transition: all 0.3s;
+                  &:hover {
+                     background-color: $font; 
+                   
+                  }
+               }
+               a {
+                  display: block;
+                  font-style: italic;
+                  margin: 0 auto;
+                  cursor: pointer;
+               }
+            }
+          
+           
+         }
+         .education {
+            text-align: left;
+            line-height: 24px;
+            display: flex;
+            img {
+               margin-right: 30px;
+               opacity: 0.8;
+            }
+         }
+         .expirience {
+            text-align: left;
+            line-height: 24px;
+            
+            img {
+               width: 275px;
+               height: 315px;
+               margin-right: 30px;
+               float: left;
+               opacity: 0.9;
+            }
+            span {
+               display: block;
+               font-weight: 600;
+               font-family: "Dosis", sanse serif;
+               margin-bottom: 20px;
+            }
+            li {
+               margin-bottom: 5px;
+               &::before {
+                  content: '- ';
+                  color: $pink;
+               }
+            }
+            &__item {
+               margin-bottom: 30px;
+            }
+
+         }
+         
+      }
+ .aside {
+    width: 350px;
+    margin-right: 30px;
+    color: $font;
+    line-height: 24px;
+    background-color: $bg-block;
+    padding: 20px;
+    img {
+       display: block;
+       margin: 0 auto 50px;
+       height: 285px;
+    }
+    h2 {
+       width: 240px;
+       padding-bottom: 10px;
+       border-bottom: 1px solid $pink;
+      //  text-shadow:  0px 4px 2px  rgba(0, 0, 0, 0.3);  
+      //  color: $font;
+    }
+    span {
+       color: #645f61;
+    }
+    ul {
+       li {
+          margin-bottom: 20px;
+          line-height: 24px;
+       }
+    }
+    address {
+       font-style:inherit;
+    }
+    &__block {
+       margin-bottom: 50px;
+    } 
+    .icon-map-marker,
+    .icon-phone,
+    .icon-envelope-o {
+       padding-left: 30px;
+       position: relative;
+       &::before {
+          position: absolute;
+          left: 0;
+
+       }
+    }
+   
+   }  
+}
+.footer {
+   
+   &__inner {
+      background-color: $bg-block;
+      padding: 20px 10px; 
+      @include flex;
+   } 
+   span {
+      display: block;
+      line-height: 35px;
+      margin-left: 10px;
+      color: $pink;
+
+   }
+
+
+}
+
+
+@import '_media'
+
+

@@ -1,0 +1,38 @@
+
+
+ $blue: #a0d8ef;
+ $pink: #783E17;
+//  $pink: #445D63;
+ $font: #f2f7fa;
+ $font-hover: #fffbfb;
+//  $font-title: #d8dde1;
+ $bg-block: hsla(24, 93%, 58%, 0.816);
+//  $bg-block: #8aa8b0;
+
+
+ @mixin flex {
+     display: flex;
+     justify-content: space-between;
+ } 
+ @mixin rate {
+   display: block;
+   height: inherit;
+   background-color: $pink;
+   border-radius: 5px;
+ }
+
+@mixin skills {
+  width: 600px;
+  margin-top: 30px;
+  text-align: left;  
+  padding: 20px;          
+  h2 {
+   text-align: center
+  }
+  
+}
+
+
+ 
+  
+  
