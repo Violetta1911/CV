@@ -1,15 +1,23 @@
 
 @media (max-width: 420px) {
+   body {
+      overflow-x: hidden;
+   }
+   .container {
+      width: 100%;
+   }
+   canvas {
+      width: 100% !important;
+   }
+
    aside {
       display:none;
    }
-   .home {
-      aside {
-         display: block;
-      }
-   }
-
-    
+   .home {      
+         .aside {
+            display: block;        
+         }
+   }    
     .btn{
         display: block;
     }
@@ -41,20 +49,21 @@
         margin-bottom: 20px;
     }
     .main {
-        padding: 10px 20px;
+        padding: 20px;
         &__inner {
            display: block;
+           width: 100%;
         }
         &__content{
-           width: 100%;
-
+         width: 100%;
+         margin: 0 auto;
            h2 {
             text-align: center;
          }
          
            .hard-skills {
-            width: 100%;
             margin-top: 0;  
+            width: inherit;
               .line {
                  width: 60%;
                  height: 7px;
@@ -92,6 +101,7 @@
            .projects {
             //   height: 300px;         
               padding: 20px;
+              width: inherit;
               .mastia {
                  margin-left: 30px;
               }
@@ -141,14 +151,25 @@
            
         }
    .aside {
-      width: 100%;
-      margin-right: 0;
+      width: inherit;
+      height: auto;
       line-height: 18px;
-      padding: 20px 40px 0;
+      padding: 30px;
+      margin-bottom: 20px;
+      margin-right: 0;
+      z-index: 2;
       img {
          display: block;
-         margin: 0 auto;
+         margin: 0 auto 30px;
          height: 205px;
+      }
+      h2 {
+         width: 100%;
+         margin-left: 0;
+         
+      }
+      address {
+         width: 250px;
       }
      
      }  

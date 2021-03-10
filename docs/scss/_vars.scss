@@ -5,8 +5,9 @@
 //  $pink: #445D63;
  $font: #f2f7fa;
  $font-hover: #fffbfb;
-//  $font-title: #d8dde1;
+ $font-title: #d8dde1;
  $bg-block: hsla(24, 93%, 58%, 0.816);
+ $block-width: 600px;
 //  $bg-block: #8aa8b0;
 
 
@@ -22,10 +23,10 @@
  }
 
 @mixin skills {
-  width: 600px;
-  margin-top: 30px;
+  width: $block-width;
   text-align: left;  
-  padding: 20px;          
+  padding: 20px;  
+  z-index: 2;        
   h2 {
    text-align: center
   }
