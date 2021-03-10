@@ -6,4 +6,3 @@ node_modules.DS_Store
 node_modules/
 app/css
 *.psd
-dist/
