@@ -10,36 +10,43 @@
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;600;700&display=swap"
       rel="stylesheet"
     /> -->
+  
     <link rel="stylesheet" href="css/libs.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
     <div class="wrapper">
       <div class="content">
-        <div class="container">
-          <header class="header">
-            <div class="btn icon-user"></div>
-            <nav>
-              <ul class="menu-list">
-                <li><a href="index.html"> About me </a></li>
-                <li><a href="https://violetta1911.github.io/CV/skills/#2"> Hard Skills </a></li>
-                <li><a href="https://violetta1911.github.io/CV/skills/#3"> Soft Skills </a></li>
-                <li><a href="https://violetta1911.github.io/CV/projects/#4"> My Projects </a></li>
-                <li><a href="https://violetta1911.github.io/CV/expirience/#5"> Education </a></li>
-                <li><a href="https://violetta1911.github.io/CV/expirience/#6"> Work experience </a></li>
-              </ul>
-            </nav>
+          <header class="header" id="navbar">
+            <div class="container">
+              <div class="btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <nav>
+                <ul class="menu-list">
+                  <li><a href="index.html"> About me </a></li>
+                  <li><a href="index.html#hard"> Hard Skills </a></li>
+                  <li><a href="index.html#soft"> Soft Skills </a></li>
+                  <li><a href="index.html#projects"> My Projects </a></li>
+                  <li><a href="#"> Education </a></li>
+                  <li><a href="expirience.html#experience"> Work experience </a></li>
+                </ul>
+              </nav>
+            </div>
           </header>            
-            <main class="main"  style="background-image: url(https://media.istockphoto.com/vectors/abstract-plexus-background-with-connecting-dots-and-lines-global-vector-id1171317153?b=1&k=6&m=1171317153&s=612x612&w=0&h=4FEAjYK-OBtxC1ObjfJ3p8hlOFIPJfDhzTc4RnyhDcI=)">
+            <main class="main">
+              <div class="container">
                 <div class="main__inner">
-                    <aside class="aside">
+                     <aside class="aside">
                         <div class="aside__photo">
                           <img src="images/photo_2021-02-26_12-23-59.jpg" alt="" />
                         </div>
                         <div class="aside__block">
                             <h2>Personal information </h2>
                             <ul>
-                                <li> <span> Date of birth: </span>November 19, 1983  37 years old.</li>
+                                <li> <span> Date of birth: </span>November 19, 1983 <br> 37 years old.</li>
                                 <li> <span> Status: </span>not married, 1 child - 12 years old.</li>
                             </ul>
                         </div>
@@ -74,10 +81,9 @@
                           </ul>
                         </div>
                        
-                      </aside>
+                      </aside> 
                     <div class="main__content">
-                          <a name="5"></a>
-                          <section class="education">
+                          <section  class="education" id="education">
                             <img src="images/study.jpg" alt="">
                             <div class="education__inner">
                               <h2>Education</h2>
@@ -89,11 +95,10 @@
                             </div>
                            
                           </section>
-                          <a name="6"></a>
-                          <section class="expirience">
+                          <section  class="expirience" id="experience">
                             <img src="images/team.jpg" alt="">
                             <div class="expirience__inner">
-                              <h2>Expirience</h2>
+                              <h2>Experience</h2>
                               <div class="expirience__item">
                                 <em>05.2020 - 11.2020 </em>
                                 <span>Avenue Seven LLC - manager of foreign economic activity</span>
@@ -132,12 +137,11 @@
                          
                     </div>
                 </div>
+              </div>
                  
             </main>
-          </div>
         </div>  
-        <footer
-          class="footer">
+       <footer class="footer">
           <div class="container">
                 <div class="footer__inner">
                   <span> 2021, sva198366@gmail.com All Rights Reserved </span>
@@ -155,10 +159,9 @@
               
           </div>
          
-        </footer>
-      </div>
-    </div>
-
+       </footer>
+    </div>  
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
