@@ -1,11 +1,11 @@
 const particles = [];
 
 function setup() {
-  const canvas = createCanvas(parent.innerWidth, parent.innerHeight);
+  const canvas = createCanvas(1900, 1250);
 
   canvas.parent("main-background");
 
-  const particlesLength = Math.floor(window.innerWidth / 20);
+  const particlesLength = Math.floor(window.innerWidth / 10);
 
   for (let i = 0; i < particlesLength; i++) {
     particles.push(new Particle());
