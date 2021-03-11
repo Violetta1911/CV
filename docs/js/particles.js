@@ -1,7 +1,7 @@
 const particles = [];
 
 function setup() {
-  const canvas = createCanvas(1900, 1250);
+  const canvas = createCanvas(parent.innerWidth, parent.innerHeight);
 
   canvas.parent("main-background");
 
