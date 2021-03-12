@@ -38,7 +38,7 @@ class Particle {
   //  Draw single particle
   draw() {
     noStroke();
-    fill("rgba(248, 128, 48, 0.97)");
+    fill("rgba(164, 94, 173, 68)");
     circle(this.pos.x, this.pos.y, this.size);
   }
   // Detect edges

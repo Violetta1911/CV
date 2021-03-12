@@ -5,7 +5,7 @@
 // start header section
 .header {
   position: relative;
-  background-color: hsla(24, 93%, 58%, 1);
+  background-color: $nav;
   padding: 20px;
   text-align: end;
   z-index: 50;
@@ -130,7 +130,7 @@
             transition: all 0.5s;
             &:nth-child(odd) {
               margin-right: 20px;
-              color: $brown;
+              color: $link;
               font-size: 18px;
             }
             &:nth-child(even) {
@@ -179,6 +179,9 @@
           transition: all 0.3s;
           &:hover {
             background-color: $font;
+            a {
+              color: $brown;
+            }
           }
         }
 
@@ -187,12 +190,13 @@
           font-style: italic;
           margin: 0 auto;
           cursor: pointer;
-          color: $brown;
+          color: $link;
+          transition: all 0.3s;
         }
       }
     }
     .education {
-       @include past;
+      @include past;
       display: flex;
       img {
         margin-right: 30px;
@@ -274,9 +278,9 @@
   }
 }
 .footer {
-  background-color: hsla(24, 93%, 58%, 1);
+  background-color: $nav;
   width: 100%;
-  color: $brown;
+  color: #fff;
 
   &__inner {
     padding: 20px 10px;

@@ -10,54 +10,52 @@ html {
 }
 
 a {
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
-    outline: none;
-    cursor: pointer;
-    font-family: "Dosis", sans-serif;
-  }
-  
-  ul,
-  li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  button {
-    outline: none;
-  }
-  
-  h1 {
-    @include title;
-    font-size: 36px;
-  }
-  
-  h2 {
-    width: 200px;
-    font-size: 24px;
-    @include title;
-  }
-  
-  h3 {
-    font-size: 16px;
-    @include title;
-    margin: 0px auto 40px;
-  }
-  
-  em {
-    display: block;
-    color: $brown;
-  }
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  cursor: pointer;
+  font-family: "Dosis", sans-serif;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  outline: none;
+}
+
+h1 {
+  @include title;
+  font-size: 36px;
+}
+
+h2 {
+  width: 200px;
+  font-size: 24px;
+  @include title;
+}
+
+h3 {
+  font-size: 16px;
+  @include title;
+  margin: 0px auto 40px;
+}
+
+em {
+  display: block;
+  color: $brown;
+}
 
 body {
-  
   font-family: "Dosis", sans-serif;
   font-weight: 400;
   font-size: 15px;
   color: $font;
-
 }
 
 canvas {
@@ -68,15 +66,15 @@ canvas {
 }
 
 section {
-    width: $block-width;
-    background-color: $bg-block;
-    padding: 20px;
-    margin-bottom: 50px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
-  }
+  width: $block-width;
+  background-color: $bg-block;
+  padding: 20px;
+  margin-bottom: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
 
 .wrapper {
   display: flex;
@@ -107,7 +105,7 @@ section {
   width: 100%;
 }
 .social-links {
-  color: #645f61;
+  color: $link;
   li {
     display: inline-block;
     width: 35px;

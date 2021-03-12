@@ -1,9 +1,12 @@
-$brown: #783e17;
+$brown: #15555e;
 $font: #fff;
 $font-hover: $brown;
-$font-title: #d8dde1;
-$bg-block: hsla(24, 93%, 58%, 0.816);
+$font-title: hsl(207, 13%, 86%);
+$nav: hsla(196, 39%, 39%, 0.9);
+$bg-block: hsla(196, 39%, 49%, 0.8);
 $block-width: 600px;
+// $link: #FAA187;
+$link: #a45ead;
 //  $bg-block: #8aa8b0;
 
 @mixin flex {
@@ -14,13 +17,13 @@ $block-width: 600px;
 @mixin title {
   margin: 0px auto 20px;
   color: $brown;
-  text-shadow:  0px 4px 2px  rgba(0, 0, 0, 0.1); 
+  text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1);
 }
 
 @mixin rate {
   display: block;
   height: inherit;
-  background-color: $brown;
+  background-color: $link;
   border-radius: 5px;
 }
 
@@ -36,5 +39,4 @@ $block-width: 600px;
   width: 98%;
   text-align: left;
   line-height: 24px;
-  
 }
