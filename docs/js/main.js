@@ -5,10 +5,10 @@ function handleSticky() {
   };
 
   // Get the navbar
-  var navbar = document.getElementById("navbar");
+  const navbar = document.getElementById("navbar");
 
   // Get the offset position of the navbar
-  var sticky = navbar.offsetTop;
+  sticky = navbar.offsetTop;
 
   // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
   function myFunction() {
@@ -20,9 +20,37 @@ function handleSticky() {
   }
 }
 
+// function follow(event) {
+//   //   get #
+//   const link = event.target.hash;
+
+//   //   get element with #
+
+//   const element = document.querySelector(link);
+
+//   //  get coordinates of element
+//   let coordinates = element.offsetHeight;
+
+//   //  get header height
+//   const header = document.querySelector(".header").offsetHeight;
+
+//   coordinates = element.offsetTop - header;
+
+//   return (element.scrollTop = coordinates);
+// }
+
+// const followPage = document.querySelectorAll(".follow");
+// followPage.forEach(function (currentBtn) {
+//   currentBtn.addEventListener("click", follow);
+// });
+
 $(function () {
   $(".btn").on("click", function () {
     $(".menu-list").slideToggle("");
+  });
+
+   $(".follow").on("click", function () {
+  $(".path").offset({ top: 60, left: 500 });
   });
 
   handleSticky();

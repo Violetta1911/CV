@@ -34,6 +34,29 @@
   }
 }
 
+@media (max-width: 920px) {
+  h2 {
+
+  }
+  .main__content {
+    .education {
+      flex-wrap: wrap;
+   
+      img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+
+      h2 {
+        text-align: center;
+      }
+     }
+  }
+  
+}
+
+
 @media (max-width: 770px) {
   .header {
     text-align: center;
@@ -70,7 +93,7 @@
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 470px) {
   aside {
     display: none;
   }
