@@ -53,7 +53,7 @@ function styles() {
       .pipe(browserSync.stream())    
  }
 
- function build (){
+ function build (){gulp
    return src([
      'docs/css/style.min.css',
      'docs/fonts/**/*',

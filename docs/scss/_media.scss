@@ -1,4 +1,7 @@
 @media (max-width: 1050px) {
+  canvas {
+    width: 100% !important;
+  }
   section {
     width: 100%;
   }
@@ -35,9 +38,9 @@
 }
 
 @media (max-width: 920px) {
-  h2 {
-
-  }
+   canvas {
+     display: none;
+   }
   .main__content {
     .education {
       flex-wrap: wrap;
@@ -85,9 +88,13 @@
     }
     .aside {
       height: 100%;
-      width: 100%;
+      width: 250px;
       img {
         height: 200px;
+      }
+      h2 {
+        width: 180px;
+        font-size: 20px;
       }
     }
   }
@@ -96,11 +103,16 @@
 @media (max-width: 470px) {
   aside {
     display: none;
+    
   }
   .home {
-    .aside {
-      display: block;
+    .main {
+      .aside {
+        display: block;
+        width: 100%;
+      }
     }
+    
   }
   .btn {
     display: block;
@@ -108,6 +120,17 @@
   .header {
     padding: 30px;
     text-align: center;
+    nav {
+      position: relative;
+      .close {
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      &:hover {
+        cursor: pointer;
+      }
+      }
+    }
     ul {
       display: none;
       position: absolute;
@@ -142,7 +165,7 @@
       }
 
       .hard-skills {
-        margin-top: 0;
+        margin-top: 20px;
         width: inherit;
         .line {
           width: 60%;

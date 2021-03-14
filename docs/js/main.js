@@ -45,13 +45,16 @@ function handleSticky() {
 // });
 
 $(function () {
-  $(".btn").on("click", function () {
+  $(".btn").on("click", function () { 
+    $(".menu-list").slideToggle("");
+  });
+  $(".close").on("click", function () { 
     $(".menu-list").slideToggle("");
   });
 
-   $(".follow").on("click", function () {
-  $(".path").offset({ top: 60, left: 500 });
-  });
+  //  $(".follow").on("click", function () {
+  // $(".path").offset({ top: 60});
+  // });
 
-  handleSticky();
+   handleSticky();
 });
