@@ -121,14 +121,8 @@
     padding: 30px;
     text-align: center;
     nav {
-      position: relative;
-      .close {
-      position: absolute;
-      right: 10px;
-      top: 5px;
-      &:hover {
-        cursor: pointer;
-      }
+      .close {      
+      visibility: inherit;
       }
     }
     ul {

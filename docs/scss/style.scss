@@ -9,6 +9,18 @@
   padding: 20px;
   text-align: end;
   z-index: 50;
+  nav {
+    position: relative;
+    .close { 
+    visibility: hidden;     
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    &:hover {
+      cursor: pointer;
+    }
+    }
+  }
 
   ul {
     li {
