@@ -20,41 +20,50 @@ function handleSticky() {
   }
 }
 
-// function follow(event) {
-//   //   get #
-//   const link = event.target.hash;
+// ********************************************************************************************************
 
-//   //   get element with #
+const followPages = document.querySelectorAll(".follow");
+const linkCoordinates= document.querySelectorAll(".path");
 
-//   const element = document.querySelector(link);
+function followLink(link) {
+    
+  const gotoSectionValue = 
+      linkCoordinates.getBoundingClientRect().top +
+      pageYOffset -
+      document.querySelector(".header").offsetHeight;
 
-//   //  get coordinates of element
-//   let coordinates = element.offsetHeight;
+    window.scrollTo({
+      top: gotoSectionValue,
+      behaivor: "smooth",
+    });
+    link.preventDefault();
+  }
 
-//   //  get header height
-//   const header = document.querySelector(".header").offsetHeight;
-
-//   coordinates = element.offsetTop - header;
-
-//   return (element.scrollTop = coordinates);
-// }
-
-// const followPage = document.querySelectorAll(".follow");
-// followPage.forEach(function (currentBtn) {
-//   currentBtn.addEventListener("click", follow);
-// });
+  followPages.forEach(function (currentBtn) {
+    currentBtn.addEventListener("click", followLink(link));
+    });
 
 $(function () {
-  $(".btn").on("click", function () { 
+  $(".btn").on("click", function () {
     $(".menu-list").slideToggle("");
   });
-  $(".close").on("click", function () { 
+  $(".close").on("click", function () {
     $(".menu-list").slideToggle("");
   });
 
-  //  $(".follow").on("click", function () {
-  // $(".path").offset({ top: 60});
-  // });
+  $(".follow").on("click", function () {
+    $(".path").offset(function (i, coord) {
+      let newCoord = {};
 
-   handleSticky();
+      newCoord.top = coord.top - 60;
+
+      newCoord.left = coord.left;
+
+      return newCoord;
+    });
+  });
+
+  handleSticky();
+
 });
+
