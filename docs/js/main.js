@@ -22,26 +22,26 @@ function handleSticky() {
 
 // ********************************************************************************************************
 
-const followPages = document.querySelectorAll(".follow");
-const linkCoordinates= document.querySelectorAll(".path");
+// const followPages = document.querySelectorAll(".follow");
+// const linkCoordinates= document.querySelectorAll(".path");
 
-function followLink(link) {
+// function followLink(link) {
     
-  const gotoSectionValue = 
-      linkCoordinates.getBoundingClientRect().top +
-      pageYOffset -
-      document.querySelector(".header").offsetHeight;
+//   const gotoSectionValue = 
+//       linkCoordinates.getBoundingClientRect().top +
+//       pageYOffset -
+//       document.querySelector(".header").offsetHeight;
 
-    window.scrollTo({
-      top: gotoSectionValue,
-      behaivor: "smooth",
-    });
-    link.preventDefault();
-  }
+//     window.scrollTo({
+//       top: gotoSectionValue,
+//       behaivor: "smooth",
+//     });
+//     link.preventDefault();
+//   }
 
-  followPages.forEach(function (currentBtn) {
-    currentBtn.addEventListener("click", followLink(link));
-    });
+//   followPages.forEach(function (currentBtn) {
+//     currentBtn.addEventListener("click", followLink(link));
+//     });
 
 $(function () {
   $(".btn").on("click", function () {
@@ -51,17 +51,17 @@ $(function () {
     $(".menu-list").slideToggle("");
   });
 
-  $(".follow").on("click", function () {
-    $(".path").offset(function (i, coord) {
-      let newCoord = {};
+  // $(".follow").on("click", function () {
+  //   $(".path").offset(function (i, coord) {
+  //     let newCoord = {};
 
-      newCoord.top = coord.top - 60;
+  //     newCoord.top = coord.top - 60;
 
-      newCoord.left = coord.left;
+  //     newCoord.left = coord.left;
 
-      return newCoord;
-    });
-  });
+  //     return newCoord;
+  //   });
+  // });
 
   handleSticky();
 
