@@ -71,19 +71,19 @@
       }
       .rate-html {
         @include rate;
-        width: 95%;
+        width: 100%;
       }
       .rate-css {
         @include rate;
-        width: 70%;
+        width: 100%;
       }
       .rate-bem {
         @include rate;
-        width: 80%;
+        width: 100%;
       }
       .rate-scss {
         @include rate;
-        width: 70%;
+        width: 90%;
       }
       .rate-gulp {
         @include rate;
@@ -91,7 +91,7 @@
       }
       .rate-js {
         @include rate;
-        width: 30%;
+        width: 60%;
       }
       .rate-jquery {
         @include rate;
@@ -99,7 +99,7 @@
       }
       .rate-git {
         @include rate;
-        width: 50%;
+        width: 70%;
       }
       .rate-adobe {
         @include rate;
